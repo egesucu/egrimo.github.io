@@ -425,15 +425,18 @@ footer a:hover {
 ////////// 404 Error //////////
  */
 
+.error-main {
+    display: grid;
+    justify-content: center;
+}
+
 .error-main h1 {
-    margin: 0 auto;
     text-align: center;
-    padding-top: 1.5rem;
+    font-size: 2rem;
 }
 
 .error-main p {
-    padding-top: 2rem;
-    margin: 0 auto;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -545,8 +548,6 @@ footer a:hover {
     .error-main p,
     .error-main h1 {
         color: var(--text-dark);
-        display: grid;
-        justify-content: center;
     }
 }
 
