@@ -540,7 +540,13 @@ footer a:hover {
         color: var(--text-dark);
     }
     .error-main {
+        background: var(--background-dark);
+    }
+    .error-main p,
+    .error-main h1 {
         color: var(--text-dark);
+        display: grid;
+        justify-content: center;
     }
 }
 
