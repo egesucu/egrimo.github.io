@@ -539,6 +539,9 @@ footer a:hover {
     .gizlilik-wrapper a {
         color: var(--text-dark);
     }
+    .error-main {
+        color: var(--text-dark);
+    }
 }
 
 
