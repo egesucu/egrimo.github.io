@@ -7,12 +7,12 @@ GLOBAL STYLES
 :root {
     /* Light Colors*/
     --primary: #487279;
-    --secondary: #ff5d06;
+    --secondary: #a4161a;
     --background: white;
     --text: #0f1218;
     /* Dark Colors */
     --primary-dark: #99D6EA;
-    --secondary-dark: #e4814c;
+    --secondary-dark: #e5383b;
     --text-dark: #ededee;
     --background-dark: #131313;
     /*Fonts*/
