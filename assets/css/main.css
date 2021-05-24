@@ -6,9 +6,10 @@ GLOBAL STYLES
 
 :root {
     /* Light Colors*/
-    --primary: #487279;
+    --primary: 	#005eaa;
     --background: white;
-    --text: black;
+    --column: #f7f7f7;
+    --text: #212121;
     /*Fonts*/
     --ff-bold: 'Roboto', sans-serif;
     --ff-regular: 'Raleway', sans-serif;
@@ -20,9 +21,11 @@ GLOBAL STYLES
 
 @media (prefers-color-scheme: dark){
     :root{
-        --primary: #99D6EA;
-        --text: #ededee;
-        --background: black;
+        --primary: #1976D2;
+        --text: #FFFFFF;
+        --column: #252525;
+        --background: #000000;
+        --box-shadow: unset;
     }
 }
 
@@ -150,13 +153,14 @@ header h2 {
     margin-top: 0.5rem;
     text-decoration: none;
     border-radius: 0.5rem;
-    color: var(--background);
+    color: white;
     padding: 0.4rem;
     background-color: var(--primary);
     transition: 0.3s;
 }
 
 .language-switch a:hover {
+    
     box-shadow: var(--box-shadow);
 }
 
@@ -165,7 +169,7 @@ header h2 {
 
 .about-wrapper {
     display: grid;
-    background-color: transparent;
+    background-color: var(--column);
     margin: 1rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -209,6 +213,7 @@ header h2 {
 
 .about-content picture img:hover {
     transition: 0.3s;
+    border-color: var(--primary);
     -webkit-filter: none;
     filter: none;
 }
@@ -227,7 +232,7 @@ header h2 {
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
-    background-color: var(--background);
+    background-color: var(--column);
 }
 
 .left-column h3,
@@ -236,7 +241,7 @@ header h2 {
 }
 
 .right-column {
-    background-color: var(--background);
+    background-color: var(--column);
     margin: 1rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -255,16 +260,14 @@ header h2 {
     cursor: pointer;
     font-size: 1.2rem;
     text-align: center;
-    color: var(--text);
-    background-color: var(--background);
+    color: white;
+    background-color: var(--primary);
     box-shadow: var(--box-shadow);
     margin-bottom: 1rem;
     transition: 0.3s;
 }
 
 .content-accordion:hover {
-    color: var(--background);
-    background-color: var(--primary);
     box-shadow: unset;
 }
 
@@ -290,8 +293,8 @@ header h2 {
 }
 
 .skills-wrapper p {
-    background-color: var(--background);
-    color: var(--text);
+    background-color: var(--primary);
+    color: white;
     padding: 0.7rem;
     min-width: 1.2rem;
     border-radius: 1.2rem;
@@ -300,8 +303,7 @@ header h2 {
 }
 
 .skills-wrapper p:hover {
-    color: var(--background);
-    background-color: var(--primary);
+    user-select: none;
     box-shadow: unset;
     
 }
