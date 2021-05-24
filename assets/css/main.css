@@ -140,6 +140,8 @@ header h2 {
 
 .language-switch {
     display: flex;
+    max-width: 1500px;
+    margin: 1rem auto;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -170,6 +172,7 @@ header h2 {
 .about-wrapper {
     display: grid;
     background-color: var(--column);
+    max-width: 1500px;
     margin: 1rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -223,6 +226,8 @@ header h2 {
 
 .resume-wrapper {
     display: grid;
+    max-width: 1500px;
+    margin: 1rem auto;
     justify-items: center;
     align-items: stretch;
 }
@@ -355,7 +360,7 @@ header h2 {
     margin: 0.75rem auto;
     border-radius: 1.5rem;
     background-color: var(--primary);
-    color: var(--background);
+    color: white;
     box-shadow: var(--box-shadow);
     transition: 0.3s;
 }
@@ -498,4 +503,11 @@ footer a:hover {
     .contact-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+@media only screen and (min-width: 1500px) {
+
+.about-wrapper{
+    margin: 1rem auto;
+}
 }
