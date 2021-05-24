@@ -10,19 +10,22 @@ GLOBAL STYLES
     --secondary: #a4161a;
     --background: white;
     --text: #0f1218;
-    /* Dark Colors */
-    --primary-dark: #99D6EA;
-    --secondary-dark: #e5383b;
-    --text-dark: #ededee;
-    --background-dark: #131313;
     /*Fonts*/
     --ff-bold: 'Roboto', sans-serif;
     --ff-regular: 'Raleway', sans-serif;
     /*Box Shadow*/
     --box-shadow: 0.1rem 0.1rem 0.3rem var(--text);
-    --box-shadow-dark: 0.1rem 0.1rem 0.3rem var(--text-dark);
     /* Border */
     --border: 0.15rem solid var(--text);
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --primary: #99D6EA;
+        --secondary: #e5383b;
+        --text: #ededee;
+        --background: #131313;
+    }
 }
 
 
@@ -372,7 +375,7 @@ footer a {
 }
 
 footer a:hover {
-    border-bottom: 0.3rem solid var(--primary-dark);
+    border-bottom: 0.3rem solid var(--primary);
 }
 
 
@@ -445,111 +448,7 @@ footer a:hover {
 ////////// Media Selectors //////////
  */
 
-@media (prefers-color-scheme: dark) {
-    * {
-        background: var(--background-dark);
-    }
-    header a h1 {
-        color: var(--primary-dark);
-    }
-    header h2 {
-        color: var(--text-dark);
-        border-color: var(--primary-dark);
-    }
-    .language-switch a {
-        color: var(--background-dark);
-        background-color: var(--secondary-dark);
-    }
-    .language-switch a:hover {
-        box-shadow: var(--box-shadow-dark);
-    }
-    .about-wrapper {
-        box-shadow: var(--box-shadow-dark);
-    }
-    .about-wrapper h3 {
-        color: var(--primary-dark);
-    }
-    .about-content p {
-        color: var(--text-dark);
-    }
-    .about-content picture img {
-        border-color: var(--text-dark);
-        box-shadow: var(--box-shadow-dark);
-    }
-    .left-column {
-        box-shadow: var(--box-shadow-dark);
-        background-color: var(--background-dark);
-    }
-    .left-column h3,
-    .right-column h3 {
-        color: var(--primary-dark);
-    }
-    .right-column {
-        background-color: var(--background-dark);
-        box-shadow: var(--box-shadow-dark);
-    }
-    .content-accordion {
-        color: var(--background-dark);
-        background-color: var(--secondary-dark);
-    }
-    .panel p {
-        color: var(--text-dark);
-    }
-    .content-accordion:hover {
-        box-shadow: var(--box-shadow-dark);
-    }
-    .skills-wrapper p {
-        background-color: var(--secondary-dark);
-        color: var(--background-dark);
-    }
-    .skills-wrapper p:hover {
-        box-shadow: var(--box-shadow-dark);
-    }
-    .contact-wrapper div a {
-        color: var(--text-dark);
-    }
-    .contact-wrapper div a:hover {
-        color: var(--primary-dark);
-    }
-    .actions-wrapper {
-        background-color: var(--background-dark);
-        box-shadow: var(--box-shadow-dark);
-    }
-    .actions-wrapper a {
-        background-color: var(--secondary-dark);
-        color: var(--background-dark);
-    }
-    .actions-wrapper a:hover {
-        box-shadow: var(--box-shadow-dark);
-    }
-    footer {
-        color: var(--background-dark);
-    }
-    footer a:hover {
-        border-bottom: 0.3rem solid var(--primary);
-    }
-    .gizlilik-top .back-menu a {
-        color: var(--background-dark);
-        background-color: var(--secondary-dark);
-    }
-    .gizlilik-top .back-menu a:hover {
-        box-shadow: var(--box-shadow-dark);
-    }
-    .gizlilik-wrapper h1,
-    .gizlilik-wrapper h2,
-    .gizlilik-wrapper h3,
-    .gizlilik-wrapper p,
-    .gizlilik-wrapper a {
-        color: var(--text-dark);
-    }
-    .error-main {
-        background: var(--background-dark);
-    }
-    .error-main p,
-    .error-main h1 {
-        color: var(--text-dark);
-    }
-}
+
 
 
 /* Desktop Sizes
