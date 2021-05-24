@@ -7,9 +7,8 @@ GLOBAL STYLES
 :root {
     /* Light Colors*/
     --primary: #487279;
-    --secondary: #a4161a;
     --background: white;
-    --text: #0f1218;
+    --text: black;
     /*Fonts*/
     --ff-bold: 'Roboto', sans-serif;
     --ff-regular: 'Raleway', sans-serif;
@@ -22,9 +21,8 @@ GLOBAL STYLES
 @media (prefers-color-scheme: dark){
     :root{
         --primary: #99D6EA;
-        --secondary: #e5383b;
         --text: #ededee;
-        --background: #131313;
+        --background: black;
     }
 }
 
@@ -154,7 +152,7 @@ header h2 {
     border-radius: 0.5rem;
     color: var(--background);
     padding: 0.4rem;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     transition: 0.3s;
 }
 
@@ -257,14 +255,17 @@ header h2 {
     cursor: pointer;
     font-size: 1.2rem;
     text-align: center;
-    color: var(--background);
-    background-color: var(--secondary);
+    color: var(--text);
+    background-color: var(--background);
+    box-shadow: var(--box-shadow);
     margin-bottom: 1rem;
     transition: 0.3s;
 }
 
 .content-accordion:hover {
-    box-shadow: var(--box-shadow);
+    color: var(--background);
+    background-color: var(--primary);
+    box-shadow: unset;
 }
 
 .panel {
@@ -289,16 +290,20 @@ header h2 {
 }
 
 .skills-wrapper p {
-    background-color: var(--secondary);
-    color: var(--background);
+    background-color: var(--background);
+    color: var(--text);
     padding: 0.7rem;
     min-width: 1.2rem;
     border-radius: 1.2rem;
+    box-shadow: var(--box-shadow);
     transition: 0.3s;
 }
 
 .skills-wrapper p:hover {
-    box-shadow: var(--box-shadow);
+    color: var(--background);
+    background-color: var(--primary);
+    box-shadow: unset;
+    
 }
 
 
@@ -347,13 +352,14 @@ header h2 {
     padding: 0.6rem;
     margin: 0.75rem auto;
     border-radius: 1.5rem;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     color: var(--background);
+    box-shadow: var(--box-shadow);
     transition: 0.3s;
 }
 
 .actions-wrapper a:hover {
-    box-shadow: var(--box-shadow);
+    box-shadow: unset;
 }
 
 
@@ -363,14 +369,14 @@ footer {
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: var(--text);
+    background-color: var(--background);
     height: 4rem;
 }
 
 footer a {
     text-decoration: none;
     font-size: 1.3rem;
-    color: var(--background);
+    color: var(--text);
     transition: 0.3s;
 }
 
@@ -404,7 +410,7 @@ footer a:hover {
     border-radius: 0.4rem;
     color: var(--background);
     padding: 0.4rem;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     transition: 0.3s;
 }
 
