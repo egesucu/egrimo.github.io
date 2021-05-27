@@ -142,7 +142,6 @@ header h2 {
     display: flex;
     max-width: 1500px;
     margin: 1rem auto;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
