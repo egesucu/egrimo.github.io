@@ -11,8 +11,8 @@ GLOBAL STYLES
     --column: #f7f7f7;
     --text: #212121;
     /*Fonts*/
-    --ff-bold: 'Roboto', sans-serif;
-    --ff-regular: 'Raleway', sans-serif;
+    --ff-bold: 'Montserrat', sans-serif;
+    --ff-regular: 'Montserrat', sans-serif;
     /*Box Shadow*/
     --box-shadow: 0.1rem 0.1rem 0.3rem var(--text);
     /* Border */
