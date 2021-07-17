@@ -23,8 +23,8 @@ GLOBAL STYLES
     :root{
         --primary: #1976D2;
         --text: #FFFFFF;
-        --column: #252525;
-        --background: #000000;
+        --background: #252525;
+        --column: #000000;
         --box-shadow: unset;
     }
 }
@@ -345,7 +345,7 @@ header h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1.2rem;
-    background-color: var(--background);
+    background-color: var(--column);
     margin: 1rem;
     padding: 1rem;
     border-radius: 1rem;
