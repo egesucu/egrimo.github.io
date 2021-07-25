@@ -59,7 +59,15 @@
 
 <body>
     <section class="language-switch" aria-label="Dil Değiştirme Bölümü">
-        <a href="/en/" lang="en" aria-label="Sayfayı İngilizce Gör" title="English">English</a>
+        <a href="/en/" lang="en" aria-label="Sayfayı İngilizce Gör" title="English">
+             <picture class="language-image">
+                 <source srcset="/assets/img/flags/en/Flag_of_the_United_States.webp 1x 
+                 /assets/img/flags/en/Flag_of_the_United_States@2x.webp 2x" type="image/webp">
+                 <source srcset="/assets/img/flags/en/Flag_of_the_United_States.jpg 1x 
+                 /assets/img/flags/en/Flag_of_the_United_States@2x.jpg 2x" type="image/jpg">
+                 <img src="/assets/img/flags/en/Flag_of_the_United_States.jpg" type="image/jpg">
+             </picture>
+        </a>
     </section>
     <header aria-label="Başlık Bölümü">
         <a href="/">
@@ -82,6 +90,7 @@
             </p>
         </div>
     </section>
+
     <section class="resume-wrapper" aria-label="İş & Eğitim Geçmişi Bölümü">
         <div class="left-column">
             <h3>Tecrübe</h3>
@@ -162,16 +171,7 @@
             <!-- İletişime Geç -->
             <h3>İletişim</h3>
             <section class="contact-wrapper" aria-label="İletişim Bölümü">
-                <div>
-                    <picture>
-                        <source srcset="/assets/img/phone.webp" type="image/webp" media="(prefers-color-scheme: light)">
-                        <source srcset="/assets/img/phone-dark.webp" type="image/webp" media="(prefers-color-scheme: dark)">
-                        <source srcset="/assets/img/phone.png" type="image/png" media="(prefers-color-scheme: light)">
-                        <source srcset="/assets/img/phone-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
-                        <img src="/assets/img/phone.png" alt="Telefon İkonu" loading="lazy">
-                    </picture>
-                    <a href="tel:+905053489898" title="+905053489898">+90 505 348 98 98</a>
-                </div>
+                <br>
                 <div>
 
                     <picture>
@@ -198,6 +198,7 @@
     </footer>
 
     <script src="/assets/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/1b6c98d31e.js" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLYGDTMZBT"></script>
     <script>
