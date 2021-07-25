@@ -344,7 +344,7 @@ header h2 {
 .actions-wrapper {
     min-height: 3.125rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     row-gap: 1.2rem;
     background-color: var(--column);
     margin: 1rem;
