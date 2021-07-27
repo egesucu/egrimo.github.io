@@ -147,26 +147,22 @@ header h2 {
 .language-switch {
     display: flex;
     max-width: 1500px;
-    
     position: sticky;
     top: 0;
 }
 
 .language-switch a {
-    margin-left: auto;
-    position: -webkit-sticky;
     position: sticky;
     margin-top: 0.5rem;
-    width: 50%;
+    margin-left: auto;
+    position: -webkit-
 }
 
-.language-switch a picture img{
-    display: inline-flex;
-    justify-self: right;
-    border-radius: 0.4rem;
-}
-
-.language-image:hover{
+.language-switch a picture *{
+    border-radius: 1rem;
+    max-width: 5rem;
+    margin-right: 0.8rem;
+    height: auto;
     box-shadow: var(--box-shadow);
 }
 
