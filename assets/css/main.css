@@ -314,14 +314,28 @@ header h2 {
 /* Contact */
 
 .contact-wrapper {
-    display: grid;
-    justify-content: center;
-}
-
-.contact-wrapper div {
     display: flex;
     justify-content: center;
+    align-content: center;
+}
+
+.contact-by-email{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
     align-items: center;
+    flex-direction: row;
+
+}
+.contact-by-email picture{
+    display: block;
+}
+.contact-by-email picture img{
+    justify-self: center;
+    align-self: center;
+    height: fit-content;
 }
 
 .contact-wrapper div a {
@@ -493,9 +507,6 @@ footer a:hover {
         margin: 0 auto;
     }
     .resume-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .contact-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
 }
