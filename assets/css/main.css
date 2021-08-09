@@ -425,6 +425,7 @@ header h2 {
 }
 
 .article-title {
+    text-align: center;
     font-weight: bold;
 }
 
